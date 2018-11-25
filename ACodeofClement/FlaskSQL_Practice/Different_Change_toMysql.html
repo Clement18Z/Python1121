@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--<form method="get" action="http://192.168.63.6:5000/login">-->		<!--for311classroom -->
+	<form method="get" action="http://192.168.137.236:5000/login">	<!--for dormitory -->
+		<p>Entrr name:</p>
+		<p>Name:  </p>
+		<p><input type="text" name="username"> </p>
+		<p>Value: </p>
+		<p><input type="text" name="Valueofuser"></p>
+		<p><br>
+		Mode for change Table inventory：
+		<!-- type：選擇鈕，只允許單選、name:定義名稱、value：值、checked:預設選項 -->
+		<input type="radio" name="userMode" value="DELETE_FROM">DELETE FROM
+		<input type="radio" name="userMode" value="INSERT_INTO" checked>INSERT INTO
+		<input type="radio" name="userMode" value="SELECT_FROM">SELECT * FROM 
+		<input type="radio" name="userMode" value="UPDATE">UPDATE
+		<br>
+		
+		<br></p>
+		<input type="submit" name="submit">
+		<input type="reset" value="reset">
+	</form>
+
+
+</body>
+</html>
+
+
+
+
+
